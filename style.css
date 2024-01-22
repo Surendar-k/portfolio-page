@@ -1,156 +1,178 @@
-body, ul {
+*{
     margin: 0;
     padding: 0;
 }
-
-body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+html{
+    scroll-behavior: smooth;
+    scroll-padding:0rem;
 }
-
-
-header {
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0;
-    overflow: hidden;
-}
-
-.header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('your-header-image.jpg'); /* Replace with your image URL */
+header{
+    display:flex;
+    background-color: rgb(33, 28, 28);
+    margin-top: 20px;
+    position:relative;
     background-size: cover;
-    background-position: center;
-    opacity: 0.7; /* Adjust the opacity as needed */
-    z-index: -1;
+    position:fixed;
+    width: 100%;
+    flex-wrap:wrap;
+    display: trasnsparent;
 }
 
-.header-content {
-    position: relative;
-    z-index: 1;
-}
 
-.header-content h1 {
-    font-size: 36px;
-    margin: 0;
+.logo{
+    margin-top: 40px;
+    margin-left: 30px;
+    color: rgb(255, 7, 7);
+    display: inline-flex;
+    
 }
-
-.header-content p {
-    font-size: 18px;
-    margin: 10px 0;
+.main{
+    background: linear-gradient(rgb(0, 0, 0),rgb(9, 9, 9),rgb(27, 33, 45)) ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    margin: auto;  
 }
-
-nav ul {
-    list-style: none;
-    text-align: center;
+ul{
+    justify-content: left;
+    margin-left: 100px;   
 }
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+ul li { 
+   display: inline;
+   margin-left: 104px;
+   margin-top: 30px;
+   font-weight: bold;
+   font-family: 'Times New Roman';
+   font-size: 130%;
+  
 }
-
-nav a {
+ul li a{
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 18px;
-    border: 2px solid #333;
-    padding: 10px 20px;
-    border-radius: 20px;
+    transition:0.2s ease-in-out;
+    list-style:none;
+    text-shadow:0px 1px rgb(255, 34, 0) ;
 }
 
-section {
-    padding: 60px 0;
+ul li a:hover{
+    color: rgb(250, 40, 2);
+}
+.stl{
+    /*myself content*/
+    color:rgb(234, 203, 162);
+    background: linear-gradient(rgb(35, 52, 77),rgb(43, 62, 98),rgb(27, 25, 25));
+    margin-top:-195px;
+    font-size: 25px;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    padding-left: 50px;
+    text-indent: 50px; 
+    height: 100%; 
+} 
+p{
+    color: white;
+    margin-top: 15px;
+    margin-left: 40px;
+    padding-right: 60%;
+    text-align: left;
+}
+img{
+    margin-left: 200px;
+    margin-top:10px;
+    height: 50%;
 }
 
-.section-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.sur{
+    height: 80%;
+    color:white;
+    padding-left: 60px;
+    padding-bottom: 130px;
+    font-size:70px;
+    margin-top: 200px;
+    display: inline-flex;
+    flex-wrap:wrap;
 }
-
-.project {
-    flex: 1;
-    margin: 10px;
-    padding: 20px;
-    border: 2px solid #333;
-    background-color: #fff;
+#sur{
+    color: rgb(251, 247, 247);
+    padding-top: 80px;
 }
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
+ion-icon{
+    font-size: 100%;
 }
-
-.footer-content {
-    font-family: 'Verdana', sans-serif;
+.project{
+    /*project*/
+    background:linear-gradient(rgb(35, 52, 77),rgb(43, 62, 98),rgb(27, 25, 25));
+    color: rgb(66, 91, 216);
+    margin-top: 00px;
+    height: 200%;
+    padding-top: 120px;
+    font-size: 50px;
+    padding-left: 40px;
 }
-
-nav a {
-    transition: background-color 0.3s; 
+.projectimg{
+   
+    color: white;
+    height: 500px;
+    width: 300px;
+    padding-left:100px;
+   flex-wrap: wrap;  
+   margin-top: -100px;
 }
-
-nav a:hover {
-    background-color: #555; 
-}
-
-.social-media {
-    text-align: center; 
-}
-
-.social-media a {
-    display: inline-block;
-    margin: 0 10px; 
-}
-
-.social-media img {
-    width: 32px; 
-    height: auto;
-}
-
-
-header {
-    position: relative;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 40px 0;
-    overflow: hidden;
-}
-
-.header-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.land {
     height: 100%;
-    background-image: url('images2/WhatsApp\ Image\ 2023-11-17\ at\ 00.41.22_e962f7d7.jpg'); /* Replace with your image URL */
-    background-size: cover;
-    background-position: center;
-    opacity: 0.7; /* Adjust the opacity as needed */
-    z-index: -1;
+    width: 800px;
+    padding-right: 100px;
+    margin-left: -100px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    
 }
-
-.header-content {
-    position: relative;
-    z-index: 1;
+.todo{
+    height: 100%;
+    width: 800px;
+    padding-right: 100px;
+    margin-left: -100px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    display: flex;
 }
-
-.header-content h1 {
-    font-size: 36px;
-    margin: 0;
+.para{
+    margin-left:60%;
+    margin-top:-32%;
+    color: black;
+    font-size: 28px;
+    width: 40%;
+    height: 100px;
+    display: flex;
+    text-align: justify;
 }
-
-.header-content p {
-    font-size: 18px;
-    margin: 10px 0;
+.para2{
+    margin-left:60%;
+    margin-top:35%;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-align: justify;
 }
+@media screen and (max-width: 500px) {
+    .smain a {
+      float: none;
+      display: block;
+    }
+    .projectimg{
+        display: block;
+        float:none
+    }
+}
+.dropdown{
+    position:relative;
+    display: inline-block;
+}
+.dropdown-content{
+    color:white;
+    padding: 0px 80px  ;
+    display: none;
+    position:absolute;
+}
+.dropdown-content a:hover{background-color: black ;}
+.dropdown:hover .dropdown-content {display: block;}
