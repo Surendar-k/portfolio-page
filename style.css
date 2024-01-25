@@ -1,178 +1,326 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     scroll-behavior: smooth;
-    scroll-padding:0rem;
+    scroll-padding: 0rem;
 }
-header{
-    display:flex;
+
+header {
+    display: flex;
     background-color: rgb(33, 28, 28);
-    margin-top: 20px;
-    position:relative;
+    padding-top: 10px;
+    position: relative;
     background-size: cover;
-    position:fixed;
-    width: 100%;
-    flex-wrap:wrap;
-    display: trasnsparent;
+    height: 50px;
+    flex-wrap: wrap;
+    color: red;
+    position: fixed;
+
+
 }
 
-
-.logo{
-    margin-top: 40px;
-    margin-left: 30px;
-    color: rgb(255, 7, 7);
+ul {
     display: inline-flex;
-    
-}
-.main{
-    background: linear-gradient(rgb(0, 0, 0),rgb(9, 9, 9),rgb(27, 33, 45)) ;
-    background-repeat: no-repeat;
-    height: 100vh;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    list-style-type: none;
+    font-weight: bold;
+    text-shadow: 0px 1px rgb(255, 34, 0);
+    padding-top: -10px;
+    background-color: rgb(33, 28, 28);
     width: 100%;
-    margin: auto;  
+
 }
-ul{
-    justify-content: left;
-    margin-left: 100px;   
-}
-ul li { 
-   display: inline;
-   margin-left: 104px;
-   margin-top: 30px;
-   font-weight: bold;
-   font-family: 'Times New Roman';
-   font-size: 130%;
-  
-}
-ul li a{
+
+ul a {
+    padding-left: 150px;
+    font-size: 130%;
     color: white;
     text-decoration: none;
-    transition:0.2s ease-in-out;
-    list-style:none;
-    text-shadow:0px 1px rgb(255, 34, 0) ;
+    font-family: 'Times New Roman';
+    transition: 0.2s ease-in-out;
+    flex-wrap: wrap;
 }
 
-ul li a:hover{
+ul li a:hover {
     color: rgb(250, 40, 2);
 }
-.stl{
-    /*myself content*/
-    color:rgb(234, 203, 162);
-    background: linear-gradient(rgb(35, 52, 77),rgb(43, 62, 98),rgb(27, 25, 25));
-    margin-top:-195px;
-    font-size: 25px;
-    padding-top: 130px;
-    padding-bottom: 150px;
-    padding-left: 50px;
-    text-indent: 50px; 
-    height: 100%; 
-} 
-p{
-    color: white;
-    margin-top: 15px;
-    margin-left: 40px;
-    padding-right: 60%;
-    text-align: left;
-}
-img{
-    margin-left: 200px;
-    margin-top:10px;
-    height: 50%;
+
+.bmain {
+    background: linear-gradient(black, black);
+    height: 100%;
+    width: auto;
+    padding-top: 15%;
+    padding-left: 40px;
+    padding-bottom: 20%;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
 }
 
-.sur{
-    height: 80%;
-    color:white;
-    padding-left: 60px;
-    padding-bottom: 130px;
-    font-size:70px;
-    margin-top: 200px;
-    display: inline-flex;
-    flex-wrap:wrap;
+.Contact {
+    border-radius: 10px;
+    height: 30px;
+    width: 120px;
+    
+    background-color: chartreuse;
+    box-shadow: 2px 2px 10px 2px chartreuse;
 }
-#sur{
-    color: rgb(251, 247, 247);
-    padding-top: 80px;
+
+
+#contactme {
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    text-decoration: none;
 }
-ion-icon{
-    font-size: 100%;
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -100px;
+
 }
-.project{
-    /*project*/
-    background:linear-gradient(rgb(35, 52, 77),rgb(43, 62, 98),rgb(27, 25, 25));
-    color: rgb(66, 91, 216);
-    margin-top: 00px;
-    height: 200%;
-    padding-top: 120px;
-    font-size: 50px;
-    padding-left: 40px;
+
+.dropdown-content {
+    color: aqua;
+    padding: 0px 80px;
+    display: none;
+    position: absolute;
+
 }
-.projectimg{
-   
-    color: white;
-    height: 500px;
-    width: 300px;
-    padding-left:100px;
-   flex-wrap: wrap;  
-   margin-top: -100px;
+
+.contnav {
+    font-size: 25px;
+    padding: 20px;
+
 }
-.land {
-    height: 100%;
-    width: 800px;
-    padding-right: 100px;
-    margin-left: -100px;
-    margin-top: 100px;
-    flex-wrap: wrap;
-    display: flex;
+
+.dropdown-content a:hover {
+    background-color: rgb(181, 173, 173);
+    color: aqua;
     
 }
-.todo{
-    height: 100%;
-    width: 800px;
-    padding-right: 100px;
-    margin-left: -100px;
-    margin-top: 10px;
+
+.dropdown button:hover .dropdown-content {
+    display: block;
+}
+
+.image {
+    float: right;
+    height: 180px;
+    padding-right: 150px;
+    padding-bottom: 100px
+}
+
+.about {
+    background: linear-gradient(rgb(96, 76, 76), black);
+
+}
+
+.stl {
+    /*myself content*/
+    color: rgb(234, 203, 162);
+    background: linear-gradient(rgb(0, 0, 0), rgb(41, 54, 79), rgb(57, 67, 74));
+    font-size: 25px;
+    text-indent: 50px;
     flex-wrap: wrap;
-    display: flex;
+    height: 100%;
+    width: auto;
+    padding-right: 50%;
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-bottom: 100px;
 }
-.para{
-    margin-left:60%;
-    margin-top:-32%;
-    color: black;
-    font-size: 28px;
-    width: 40%;
-    height: 100px;
-    display: flex;
-    text-align: justify;
+
+.stl p {
+    color: white;
+    text-align: left;
 }
-.para2{
-    margin-left:60%;
-    margin-top:35%;
-    color: rgb(255, 255, 255);
-    font-size: 28px;
-    text-align: justify;
+
+.mainproject {
+    background: linear-gradient( rgb(57, 65, 75), rgb(49, 56, 69), rgb(52, 49, 49));
+    padding-top: 90px;
+    padding-left: 50px;
+    font-size: 50px;
+    color: white;
+    height: 100%;
+
+    width: auto;
 }
-@media screen and (max-width: 500px) {
-    .smain a {
-      float: none;
-      display: block;
-    }
-    .projectimg{
-        display: block;
-        float:none
-    }
+
+.project {
+    background: linear-gradient(rgb(53, 62, 71), rgb(44, 52, 67), rgb(25, 37, 60));
+    padding-top: 40px;
+    padding-left: 50px;
+    font-size: 50px;
+    color: white;
+    height: 100%;
+    display: inline-flex;
+    padding-right: 200;
+    border: 10px;
+    width: 100%;
+    border-radius: 10px;
+    margin-left: -50px;
+
+
 }
-.dropdown{
-    position:relative;
-    display: inline-block;
+
+.project:hover {
+    background:linear-gradient( rgb(49, 47, 69),rgb(18, 16, 16));
 }
-.dropdown-content{
-    color:white;
-    padding: 0px 80px  ;
-    display: none;
-    position:absolute;
+
+.project1 {
+    border: 10px;
+    display: inline-flex;
+    border: 10px;
+    border-color: aqua;
+    max-width: 100vh;
+    flex-wrap: wrap;
+    padding-left: 0px;
+
+
 }
-.dropdown-content a:hover{background-color: black ;}
-.dropdown:hover .dropdown-content {display: block;}
+
+.land {
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: 50px;
+}
+
+.project1 p {
+    font-size: 30px;
+    color: red;
+    width: 85%;
+
+
+}
+
+.project2 {
+    border: 10px;
+    display: block;
+    border-color: aqua;
+    float: right;
+    max-width: 100vh;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    padding-top: 50px;
+
+
+}
+
+.todo {
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: -50%px;
+
+}
+
+.project2 p {
+    font-size: 30px;
+    color: red;
+    width: 85%;
+
+}
+
+.servicediv {
+    background: linear-gradient(rgb(20, 39, 58), rgb(87, 89, 94), rgb(75, 73, 73));
+    height: 100%;
+    text-decoration: dotted;
+    color: rgb(52, 255, 6);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.con {
+    float: right;
+    padding-right: 100px;
+    display: inline-flex;
+    padding-left: auto;
+    padding-bottom: 50px;
+    background: linear-gradient(rgb(74, 75, 77), rgb(36, 33, 33), black);
+    padding-top: 100px;
+}
+
+.section1 {
+    padding-top: 40px;
+    border: 100px;
+    background-color: rgb(28, 48, 52);
+    border-radius: 20px;
+    font-size: 30px;
+    max-width: 55%;
+    color: rgb(34, 160, 121);
+    
+
+}
+
+.section1:hover {
+    box-shadow: 2px 2px 10px 5px lightblue;
+    transition-duration: 0.4s ease-in-out;
+}
+
+
+
+.section2 {
+    margin-left: 10px;
+    padding-top: 40px;
+    border: 100px;
+    background-color: rgb(28, 48, 52);
+    border-radius: 20px;
+    font-size: 30px;
+    max-width: 55%;
+    color: rgb(37, 180, 135);
+    flex-wrap: wrap;
+
+}
+
+.section2 h3 {
+    padding-left: 15px;
+}
+
+.section2:hover {
+    box-shadow: 2px 2px 10px 5px lightblue;
+    transition-duration: 0.4s ease-in-out;
+}
+
+.section1 p {
+    font-size: 30px;
+    max-height: 150%;
+    max-width: 80%;
+    transform:translate(-1%,30%);
+}
+
+.section2 p {
+    font-size: 30px;
+    max-height: 150%;
+    max-width: 80%;
+    padding: 10px;
+    padding-top: 40px;
+
+
+}
+
+.section1 ion-icon {
+    color: aqua;
+    font-size: 150px;
+    margin-left: -100px;
+    transform:translate(30%,10%);
+    top: -40%;
+
+
+}
+
+.section2 ion-icon {
+    font-size: 150px;
+    color: aqua;
+    margin-left: -100px;
+    transform:translate(11%,15%);
+    top: -40%;
+
+}
